@@ -1,0 +1,92 @@
+body {
+    background: #FAFAFA;
+    /*margin-top: 50px;*/
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+    FORMULAIRE
+*/
+.form {
+    background: #009688;
+    border: 1px solid #004D40;
+    border-width: 0 0 3px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.21);
+    display: flex;
+    font-size: 1.5em;
+}
+
+.form > * {
+    background: #009688;
+    border: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif; 
+    outline: none;
+    padding: 10px;
+}
+
+.form > input {
+    width: 100%;
+}
+.form > input::placeholder {
+    color: #B2DFDB;
+}
+
+/*
+    BOUTONS
+*/
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 50px;
+}
+
+.form > button {
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.formButton-active {
+    background: #26A69A;
+    transform: rotate(180deg);
+}
+
+/*
+    ITEMS
+*/
+
+.list-items {
+    font-size: 1.1em;
+    padding: 0;
+    perspective: 500px;
+}
+
+.item {
+    background: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.21);
+    display: flex;
+    margin-bottom: 10px;
+    max-width: 100%;
+    padding: 10px;
+    transition: 0.6s;
+}
+.item span:first-child {
+    width: 100%;
+}
+
+/*
+    ANIMATION
+*/
+
+.flip {
+    background: #ECEFF1;
+    color: #9E9E9E;
+    transform: rotateX(360deg);
+}
+.flip > span {
+    text-decoration: line-through;
+}
